@@ -5,47 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ditlev Guld</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: sans-serif;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #f9f9f9;
+      color: #333;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: 100vh;
+    }
+
+    .left,
+    .right {
+      width: 50%;
       padding: 2rem;
     }
-    h1 {
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .left h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-    p {
-      max-width: 600px;
-      text-align: center;
-      margin-bottom: 2rem;
+
+    .left p {
+      max-width: 400px;
+      line-height: 1.5;
     }
-    .image-container {
+
+    .right {
       display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      width: 100%;
-      max-width: 800px;
+      justify-content: center;
+      align-items: center;
     }
-    img {
-      width: 100%;
+
+    .right img {
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Ditlev Lundsfryd Guld</h1>
-  <p>Studerende med interesse for natur og musik. Arbejder med høst af tagrør til stråtag. Spiller guitar og trompet.</p>
+  <div class="left">
+    <h1>Ditlev</h1>
+    <p>Studerende med interesse for natur og musik.  
+    Arbejder med høst af tagrør til stråtag.  
+    Spiller guitar og trompet.</p>
+  </div>
 
-  <div class="image-container">
-    <img src="billede1.jpg" alt="Billede 1">
-    <img src="billede2.jpg" alt="Billede 2">
+  <div class="right">
+    <img src="billede.jpg" alt="Et billede relateret til mig">
   </div>
 
 </body>
