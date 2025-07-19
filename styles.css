@@ -103,7 +103,7 @@ body {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -10px; /* Adjust to position the line */
+    left: 0px; /* Adjust to position the line */
     top: 20px; /* Adjust to position the line */
     width: 2px;
     height: calc(100% - 20px); /* Adjust height to connect to the next item */
