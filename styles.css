@@ -79,6 +79,7 @@ body {
     position: absolute;
     left: -10px; /* Adjust to position the bullet */
     top: 0;
+    z-index: 1; /* Ensure bullet is above the line */
 }
 
 .content {
@@ -102,10 +103,10 @@ body {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 5px; /* Adjust to position the line */
     top: 20px; /* Adjust to position the line */
     width: 2px;
-    height: 100%;
+    height: calc(100% - 20px); /* Adjust height to connect to the next item */
     background-color: #415360;
-    z-index: -1; /* Place behind the bullet and content */
+    z-index: 0; /* Place behind the bullet and content */
 }
