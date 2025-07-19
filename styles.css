@@ -18,7 +18,7 @@ body {
 .bullet {
     width: 20px;
     height: 20px;
-    background-color: #3498db;
+    background-color: #415360;
     border-radius: 50%;
     position: absolute;
     left: -10px; /* Adjust to position the bullet */
@@ -50,6 +50,6 @@ body {
     top: 20px; /* Adjust to position the line */
     width: 2px;
     height: 100%;
-    background-color: #3498db;
+    background-color: #415360;
     z-index: -1; /* Place behind the bullet and content */
 }
