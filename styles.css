@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.bullet {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px; /* Adjust to position the bullet */
+    top: 0;
+}
+
+.content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 30px; /* Space for the bullet */
+}
+
+.content h3 {
+    margin: 0 0 5px;
+}
+
+.content p {
+    margin: 5px 0;
+}
+
+/* Connecting line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px; /* Adjust to position the line */
+    width: 2px;
+    height: 100%;
+    background-color: #3498db;
+    z-index: -1; /* Place behind the bullet and content */
+}
