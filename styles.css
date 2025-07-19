@@ -58,6 +58,7 @@ body {
     body {
         flex-direction: column;
     }
+}
 
 .timeline {
     position: relative;
