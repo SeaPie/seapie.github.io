@@ -106,7 +106,7 @@ body {
     left: 0px; /* Adjust to position the line */
     top: 20px; /* Adjust to position the line */
     width: 2px;
-    height: calc(100% - 20px); /* Adjust height to connect to the next item */
+    height: 100%; /* Adjust height to connect to the next item */
     background-color: #415360;
     z-index: 0; /* Place behind the bullet and content */
 }
