@@ -37,12 +37,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.left p {
-    max-width: 50%; /* Adjust width to fit screen */
-    line-height: 1.5;
-    padding: 2rem;
-}
-
 .right {
     display: flex;
     justify-content: center;
