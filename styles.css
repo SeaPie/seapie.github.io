@@ -38,8 +38,9 @@ body {
 }
 
 .left p {
-    max-width: 600px;
+    max-width: 50%; /* Adjust width to fit screen */
     line-height: 1.5;
+    padding: 2rem;
 }
 
 .right {
