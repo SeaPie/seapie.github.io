@@ -23,37 +23,37 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    background-color: #e6e6ff;
+    background-color: #d5dfff;
+    margin-top: 30px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 
-.column {
-  float: left;
-  width: fit-content;
-  margin-top: 15%;
+.row > * {
+    flex: 1;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.left {
+    margin-right: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
+.right {
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: -4px;
+}
+
+img {
     width: 100%;
-  }
-}
-
-.column img {
-    max-width: 270px;
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    margin: 15px;
+    height: 100%;
+    border-radius: 5px;
 }
 
 h1 {
@@ -61,12 +61,10 @@ h1 {
     font-size: auto;
     margin-top: 30px;
     margin-bottom: 1rem;
-    margin-left: 15px;
 }
 
 hr {
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 100%;
 }
 
 .text {
@@ -76,9 +74,16 @@ hr {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 15px;
 }
 
+.text h2 {
+    margin-top: 0;
+    width: 100%;
+}
+
+.article {
+    margin: 0 20px;
+}
 
 /* Timeline styles */
 .timeline {
@@ -129,4 +134,27 @@ hr {
     height: 100%; /* Adjust height to connect to the next item */
     background-color: #415360;
     z-index: 0; /* Place behind the bullet and content */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Anchors */
+a {
+  color: #415360;
+}
+
+a:visited {
+  color: #415360;
+}
+
+a:hover {
+  color: navy;
+}
+
+a:active {
+  color: navy;
 }
