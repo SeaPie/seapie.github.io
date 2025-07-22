@@ -40,7 +40,7 @@ body {
 .right {
     margin-left: 5px;
     margin-top: auto;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
 }
 
 img {
@@ -104,6 +104,9 @@ hr {
     flex-direction: column; /* Stack items vertically */
     border: 1px solid #ddd;
     border-radius: 5px;
+    }
+    h1 {
+        text-align: center;
     }
 }
 
