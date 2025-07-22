@@ -35,12 +35,14 @@ body {
 
 .left {
     margin-right: 5px;
+    max-width: 50%; /* Fix scaling issue on mobile */
 }
 
 .right {
     margin-left: 5px;
     margin-top: auto;
     margin-bottom: -4px;
+    max-width: 50%;
 }
 
 img {
