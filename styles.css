@@ -1,11 +1,4 @@
 /* Home page styles */
-@font-face {
-    font-family: 'Conquer';
-    src: url('Conquer.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -57,7 +50,7 @@ img {
 }
 
 h1 {
-    font-family: 'Conquer', serif;
+    font-family: serif;
     font-size: auto;
     margin-top: 30px;
     margin-bottom: 1rem;
