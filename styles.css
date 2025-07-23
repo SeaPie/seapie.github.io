@@ -79,9 +79,34 @@ hr {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.photo {
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
 .text h2 {
     margin-top: 0;
     width: 100%;
+}
+
+figure {
+    margin: 0;
 }
 
 /* Scaling for mobile */
