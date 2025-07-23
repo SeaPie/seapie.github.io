@@ -16,7 +16,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    width: 600px;
+    width: 100%;
     background-color: #d5dfff;
     margin-top: 30px;
     margin-bottom: auto;
@@ -24,9 +24,7 @@ body {
     flex-direction: column; /* Stack items vertically */
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 .row {
@@ -115,9 +113,7 @@ hr {
     flex-direction: column; /* Stack items vertically */
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 5px;
     }
     
     h1 {
@@ -182,7 +178,6 @@ hr {
 /* Footer */
 footer {
     text-align: center;
-    margin-bottom: 25px;
     display: block;
 }
 
