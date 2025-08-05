@@ -1,2 +1,7 @@
-const currentYear = new Date().getFullYear();
-document.getElementById('current-year').textContent = currentYear;
+document.addEventListener("DOMContentLoaded", function() {
+    const currentYear = new Date().getFullYear();
+    const currentYearElement = document.getElementById("current-year");
+    if (currentYearElement) {
+        currentYearElement.textContent = currentYear;
+    }
+});
