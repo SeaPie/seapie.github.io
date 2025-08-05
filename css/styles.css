@@ -27,6 +27,10 @@ body {
     padding: 15px;
 }
 
+.container li {
+    margin-top: 5px;
+}
+
 .container-gallery {
     margin-left: auto;
     margin-right: auto;
@@ -176,6 +180,10 @@ figure {
     padding: 5px;
     }
 
+    .container li {
+        margin-top: 5px;
+    }
+
     .container-gallery {
     margin-left: auto;
     margin-right: auto;
@@ -213,15 +221,6 @@ figure {
     .books {
     margin-top: -5px;
     margin-bottom: 20px;
-    }
-
-    /* Hi vis text for enhancing contrast for the visually impaired */
-    .dark-hi-vis {
-        color: #242933;
-    }
-
-    .dark-hi-vis a, a:visited {
-        color: #242933;
     }
 }
 
@@ -284,11 +283,11 @@ footer {
 
 /* Anchors */
 a {
-  color: #415360;
+  color: #36414F;
 }
 
 a:visited {
-  color: #415360;
+  color: #36414F;
 }
 
 a:hover {
