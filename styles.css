@@ -47,7 +47,7 @@ body {
     margin-right: auto;
     max-width: 600px;
     width: 100%;
-    background-color: #00cccc;
+    background-color: #1dc9c9;
     margin-top: 30px;
     margin-bottom: auto;
     display: flex;
@@ -140,6 +140,11 @@ figure {
     margin: 0;
 }
 
+.books {
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
 /* Scaling for mobile */
 @media screen and (max-width: 600px) {
     .row {
@@ -191,7 +196,7 @@ figure {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    background-color: #00cccc;
+    background-color: #1dc9c9;
     margin-top: 0;
     margin-bottom: auto;
     display: flex;
@@ -206,7 +211,10 @@ figure {
         font-size: 2em;
     }
     
-
+    .books {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    }
 }
 
 /* Timeline styles */
