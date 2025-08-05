@@ -56,7 +56,6 @@ body {
     border-radius: 5px;
     padding: 15px;
 }
-    
 
 .row {
     display: flex;
@@ -215,6 +214,15 @@ figure {
     margin-top: -5px;
     margin-bottom: 20px;
     }
+
+    /* Hi vis text for enhancing contrast for the visually impaired */
+    .dark-hi-vis {
+        color: #242933;
+    }
+
+    .dark-hi-vis a, a:visited {
+        color: #242933;
+    }
 }
 
 /* Timeline styles */
@@ -289,4 +297,13 @@ a:hover {
 
 a:active {
   color: navy;
+}
+
+/* Hi vis text for enhancing contrast for the visually impaired */
+.dark-hi-vis {
+    color: #242933;
+}
+
+.dark-hi-vis a, a:visited {
+    color: #242933;
 }
