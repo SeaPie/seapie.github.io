@@ -171,14 +171,32 @@ figure {
     margin-bottom: 20px;
 }
 
+/* Inline header for Galleri */
+.inline-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.inline-header p {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
 /* Scaling for mobile */
 @media screen and (max-width: 600px) {
     .row {
         display: block;
     }
 
-    .row p {
+    .inline-header p {
         text-align: center;
+        margin-bottom: 5px;
+    }
+
+    p {
+        text-align: left;
     }
 
     .left,
