@@ -3,43 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tidligere og nuværende jobstillinger.">
     <title>Mit CV</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/current-year.js"></script>
+    <script src="../js/load-footer.js"></script>
 </head>
 <body>
-    <div class="left">
-        <h1>Mit CV: under arbejde:)</h1>
-        <!--
-        <div class="timeline">
-            <section>
-                <div class="timeline-item">
-                    <div class="bullet"></div>
-                    <div class="content">
-                        <h3>Job Title 1</h3>
-                        <p>Company Name 1 - Year Started to Year Ended</p>
-                        <p>Brief description of your role and achievements.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="bullet"></div>
-                    <div class="content">
-                        <h3>Job Title 2</h3>
-                        <p>Company Name 2 - Year Started to Year Ended</p>
-                        <p>Brief description of your role and achievements.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="bullet"></div>
-                    <div class="content">
-                        <h3>Job Title 3</h3>
-                        <p>Company Name 3 - Year Started to Year Ended</p>
-                        <p>Brief description of your role and achievements.</p>
-                    </div>
-                </div>
-        
-            </section>
+    <div class="container-cv">
+        <section>
+        <h1>Mit CV</h1>
+        <hr>
+        <div class="text">
+            <h2>Mine stillinger:</h2>
+            <ul>
+                <li>2019-<span id="current-year"></span>: Arbejder hos tækker <a href="https://stråtag.dk/" target="_blank">Finn Guld</a> og tækker/tømrer <a href="https://www.thomasguld.dk/" target="_blank">Thomas Guld</a>. Mit arbejde indebærer høst og forarbejdning af både miscanthus og tagrør, samt skiftning af tagrykninger.</li>
+            </ul>
+            <h2>Hvad byder fremtiden?</h2>
+            <p>Jeg starter i 2025 på søværnets værnepligts-uddannelse.</p>
         </div>
-        -->
+        </section>
+        <div id="footer"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof loadFooter === 'function') loadFooter();
+            });
+        </script>
     </div>
 </body>
 </html>

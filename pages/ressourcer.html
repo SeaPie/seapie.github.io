@@ -29,11 +29,11 @@
                 <li>Fahrenheit 451 - Ray Bradbury</li>
             </ul>
         </div>
-        <footer>
-        <p class="dark-hi-vis">© <span id="current-year"></span> Ditlev Lundsfryd Guld · Licens: 
-         <a class="dark-hi-vis" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener">CC BY 4.0</a>
-         </p>
-        <p><a target="_blank" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">Sidens GitHub repo</a> · <a href="../index.html">Tilbage til forsiden.</a> </p>
-        </footer>
+        <div id="footer"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof loadFooter === 'function') loadFooter();
+            });
+        </script>
     </div>
 </body>
