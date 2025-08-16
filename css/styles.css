@@ -125,6 +125,10 @@ p {
 
 hr {
     width: 100%;
+    border-top: 1px solid #242933;
+    border-bottom: 1px solid #36414F;
+    border-left: 1px solid #242933;
+    border-right: 1px solid #36414F;
 }
 
 .text {
@@ -281,57 +285,6 @@ figure {
         margin-top: -5px;
         margin-bottom: 20px;
     }
-}
-
-/* Timeline styles */
-.timeline {
-    position: relative;
-    padding: 20px 0;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 20px 0;
-}
-
-.bullet {
-    width: 20px;
-    height: 20px;
-    background-color: #415360;
-    border-radius: 50%;
-    position: absolute;
-    left: -10px; /* Adjust to position the bullet */
-    top: 0;
-    z-index: 1; /* Ensure bullet is above the line */
-}
-
-.content {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 30px; /* Space for the bullet */
-}
-
-.content h3 {
-    margin: 0 0 5px;
-}
-
-.content p {
-    margin: 5px 0;
-}
-
-/* Connecting line */
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 0px; /* Adjust to position the line */
-    top: 20px; /* Adjust to position the line */
-    width: 2px;
-    height: 100%; /* Adjust height to connect to the next item */
-    background-color: #415360;
-    z-index: 0; /* Place behind the bullet and content */
 }
 
 /* Footer */
