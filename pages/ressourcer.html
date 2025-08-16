@@ -33,7 +33,22 @@
         <div id="footer"></div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                if (typeof loadFooter === 'function') loadFooter();
+                if (typeof loadFooter === 'function') {
+                    loadFooter();
+                    // Wait for footer to load, then set year
+                    setTimeout(function() {
+                        if (typeof setCurrentYear === 'function') {
+                            setCurrentYear();
+                        } else {
+                            // fallback if setCurrentYear is not defined
+                            const currentYear = new Date().getFullYear();
+                            const currentYearElement = document.getElementById("current-year");
+                            if (currentYearElement) {
+                                currentYearElement.textContent = currentYear;
+                            }
+                        }
+                    }, 100);
+                }
             });
         </script>
     </div>
