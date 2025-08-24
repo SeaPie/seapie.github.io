@@ -53,20 +53,13 @@ body {
     font-size: 1.2rem;
 }
 
-.header-title {
-    font-size: 2rem;
-    flex-wrap: nowrap;
-    font-family: 'gateral-bold', serif;
-    font-weight: bold;
-}
-
 .header-title a {
     color: #fff;
     text-decoration: none;
 }
 
 /** Header-Desktop **/
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .header-mobile {
         display: none;
     }
@@ -79,6 +72,13 @@ body {
         justify-content: space-between;
         align-items: center;
         height: 100%;
+    }
+
+    .header-title {
+        font-size: 2rem;
+        flex-wrap: nowrap;
+        font-family: 'gateral-bold', serif;
+        font-weight: bold;
     }
 
     .nav {
@@ -97,7 +97,7 @@ body {
 }
 
 /** Header-mobile **/
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .header-desktop {
         display: none;
     }
@@ -110,6 +110,13 @@ body {
         align-items: center;
         height: 100%;
         position: relative;
+    }
+
+    .header-title {
+        font-size: 1.6rem;
+        flex-wrap: nowrap;
+        font-family: 'gateral-bold', serif;
+        font-weight: bold;
     }
 
     .hamburger {
@@ -126,9 +133,9 @@ body {
     .mobile-nav {
         display: none;
         flex-direction: column;
-        position: fixed;
-        top: 64px;
-        left: 0;
+        position: absolute;
+        top: 90px;
+        left: -40px;
         background: #001524;
         width: 100vw;
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -137,6 +144,7 @@ body {
 
     .mobile-nav.open {
         display: flex;
+        margin: 0;
     }
 
     .mobile-nav p {
@@ -165,9 +173,26 @@ body {
     font-size: 2rem
 }
 
+.main-content-m-margin-container {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-family: 'serif';
+    font-size: 1.1rem;
+}
+
+.main-content-m-margin-container h1 {
+    font-family: 'gateral-regular', 'serif';
+    font-size: 2rem
+}
+
 /** Content Desktop **/
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .front-door-mobile {
+        display: none;
+    }
+
+    .main-content-m-margin-container {
         display: none;
     }
 
@@ -177,11 +202,40 @@ body {
         max-width: 1100px;
         margin: 0 auto;
     }
+
+    .row-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .row-desktop-left {
+        display: flex-start;
+        width: 40%;
+    }
+
+    .row-desktop-right {
+        display: flex-end;
+        width: 50%;
+    }
+
+    .hero-desktop {
+        max-width: 100%;
+        width: 550px;
+        height: 100%;
+    }
 }
 
 /** Content Mobile **/
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .front-door-desktop {
+        display: none;
+    }
+
+    .main-content-l-margin-container {
         display: none;
     }
 
@@ -189,6 +243,12 @@ body {
         display: block;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .hero-mobile {
+        max-width: 100%;
+        width: 550px;
+        height: 100%;
     }
 }
 
@@ -198,8 +258,8 @@ body {
     width: 100%;
     background-color: #15616D;
     color: #fff;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     box-sizing: border-box;
     min-height: 150px;
@@ -210,13 +270,6 @@ body {
 .footer-container a {
     color: #fff;
     text-decoration: underline;
-}
-
-.footer-title {
-    font-size: 2rem;
-    flex-wrap: nowrap;
-    font-family: 'gateral-bold', serif;
-    font-weight: bold;
 }
 
 .footer-title a {
@@ -244,7 +297,7 @@ body {
 }
 
 /** Footer Desktop **/
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .footer-columns-mobile {
         display: none;
     }
@@ -265,6 +318,10 @@ body {
         align-items: center;
         justify-content: flex-start;
         flex: 1;
+        font-size: 2rem;
+        flex-wrap: nowrap;
+        font-family: 'gateral-bold', serif;
+        font-weight: bold;
     }
 
     .footer-left {
@@ -299,7 +356,7 @@ body {
 }
 
 /** Footer Mobile **/
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .footer-columns-mobile {
         display: flex;
         flex-direction: column;
@@ -317,6 +374,10 @@ body {
         align-items: center;
         justify-content: center;
         flex: 1;
+        font-size: 1.6rem;
+        flex-wrap: nowrap;
+        font-family: 'gateral-bold', serif;
+        font-weight: bold;
     }
 
     .footer-left {
