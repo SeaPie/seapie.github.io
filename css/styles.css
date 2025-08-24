@@ -135,7 +135,7 @@ body {
         flex-direction: column;
         position: absolute;
         top: 90px;
-        left: -40px;
+        left: 0;
         background: #001524;
         width: 100vw;
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
