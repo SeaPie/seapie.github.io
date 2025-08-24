@@ -85,20 +85,46 @@
         </p>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="custom-footer">
-      <p>© <span id="current-year"></span> Ditlev Lundsfryd Guld</p>
-      <p>
-          <a target="_blank" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">Sidens GitHub repo</a> · 
-          <a href="index.html">Tilbage til forsiden.</a>
-      </p>
-    </footer>
   </div>
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-columns-desktop">
+      <div class="footer-left">
+        <div class="footer-title"><a href="index.html">Ditlev Lundsfryd Guld</a></div>
+        <hr class="footer-line">
+        <div class="footer-notice">
+          <p>Copyright © <span id="current-year-desktop"></span></p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a target="_self" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">
+          <img src="images/github-mark-white.png" alt="GitHub" class="github-footer-icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-columns-mobile">
+      <div class="footer-left">
+        <div class="footer-title"><a href="index.html">Ditlev Lundsfryd Guld</a></div>
+        <hr class="footer-line">
+        <div class="footer-notice">
+          <p>Copyright © <span id="current-year-mobile"></span></p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a target="_self" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">
+          <img src="images/github-mark-white.png" alt="GitHub" class="github-footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
   <script>
-      // Set current year in footer
+      // Set current year in both footers
       document.addEventListener("DOMContentLoaded", function() {
-          var yearSpan = document.getElementById("current-year");
-          if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+          var yearDesktop = document.getElementById("current-year-desktop"); //unique id for both footers or they won't work.
+          var yearMobile = document.getElementById("current-year-mobile");
+          var year = new Date().getFullYear();
+          if (yearDesktop) yearDesktop.textContent = year;
+          if (yearMobile) yearMobile.textContent = year;
       });
   </script>
 </body>
