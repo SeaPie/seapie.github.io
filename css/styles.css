@@ -1,21 +1,35 @@
+/** Container **/
+.container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    background-color: #fffde7;
+    width: 100vw;
+    min-height: 100vw;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
 /** Header https://coolors.co/001524-15616d-f1e9d0-87bfff-3f8efc **/
-    .header-frame {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 64px;
-        margin: 0;
-        padding: 0;
-        background-color: #001524;
-        z-index: 1000;
-        box-sizing: border-box;
-        color: #fff;
-        font-size: 1.2rem;
-    }
+.header-frame {
+    width: 100vw;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    background-color: #001524;
+    z-index: 1000;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.2rem;
+}
 
+/** Header-Desktop **/
 @media (min-width: 750px) {
-
+    .header-mobile {
+        display: none;
+    }
 
     .header-desktop {
         width: 75%;
@@ -26,11 +40,67 @@
         align-items: center;
         height: 100%;
     }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
 }
 
-
+/** Header-mobile **/
 @media (max-width: 750px) {
+    .header-desktop {
+        display: none;
+    }
 
+    .header-mobile {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+    .hamburger {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
+        z-index: 1100;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;   /* changed from absolute to fixed */
+        top: 64px;
+        left: 0;
+        background: #001524;
+        width: 100vw;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        padding: 10px 0;
+    }
+
+    .mobile-nav.open {
+        display: flex;
+    }
+
+    .mobile-nav p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 }
 
 .header-title {
@@ -43,9 +113,49 @@
     text-decoration: none;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    
+/** Content main page **/
+.main-content-l-margin-container {
+    display: block;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+/** Content Desktop **/
+@media (min-width: 750px) {
+    .front-door-mobile {
+        display: none;
+    }
+
+    .front-door-desktop {
+        display: block;
+        width: 75%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/** Content Mobile **/
+@media (max-width: 750px) {
+    .front-door-desktop {
+        display: none;
+    }
+
+    .front-door-mobile {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/** Footer Styles **/
+.custom-footer {
+    background-color: #15616D;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.custom-footer a {
+    color: #fff;
+    text-decoration: underline;
 }
