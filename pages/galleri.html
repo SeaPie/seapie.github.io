@@ -7,68 +7,105 @@
     <title>Galleri</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/current-year.js"></script>
-    <script src="../js/gallery-modal.js"></script>
-    <script src="../js/load-footer.js"></script>
+    <script src="../js/hamburger.js"></script>
 </head>
 <body>
-    <h1>Under ombygning</h1>
-    <!--  
-    <div class="container-gallery">
-        <div class="row">
-            <div class="inline-header">
-                <h1>Galleri</h1>
-                <p>- klik for at forstørre billedet.</p>
-            </div>
+  <!-- Body -->
+  <div class="container">
+    <!-- Header -->
+    <header class="header-frame">
+      <!-- Desktop -->
+      <div class="header-desktop">
+        <div class="header-title"><a href="../index.html">Ditlev Lundsfryd Guld</a></div>
+        <div class="nav">
+          <p><a href="../pages/galleri.html">Galleri</a></p>
+          <p><a href="../pages/ressourcer.html">Ressourcer</a></p>
+          <p><a href="../pages/cv.html">Mit CV</a></p>
         </div>
-        <hr>
-        <figure class="photo">
-            <a href="../images/norge2024-25.jpg" target="_blank">
-                <img src="../images/norge2024-25.avif" fetchpriority="high" alt="Et billede af de norske bjerge med en tung tåge.">
-            </a>
-            <figcaption>Norge, 2024. - En tidlig morgen.</figcaption>
-        </figure>
-        <hr>
-        <figure class="photo">
-            <a href="../images/danmark2021-25.png" target="_blank">
-                <img src="../images/danmark2021-25.avif" fetchpriority="high" alt="Et billede af et fuglehus.">
-            </a>
-            <figcaption>Danmark, 2021. - Solskinsdag.</figcaption>
-        </figure>
-        <hr>
-        <figure class="photo">
-            <a href="../images/danmark2020-50.png" target="_blank">
-                <img src="../images/danmark2020-50.avif" fetchpriority="auto" alt="Et billede af regn på et vindue.">
-            </a>
-            <figcaption>Danmark, 2020. - Regnvejrsdag.</figcaption>
-        </figure>
-        <hr>
-        <figure class="photo">
-            <a href="../images/danmark2-2020-50.png" target="_blank">
-                <img src="../images/danmark2-2020-50.avif" fetchpriority="auto" alt="Et billede af en blomst og en lampe.">
-            </a>
-            <figcaption>Danmark, 2020. - Regnvejrsdag 2.</figcaption>
-        </figure>
-        <div id="footer"></div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                if (typeof loadFooter === 'function') {
-                    loadFooter();
-                    // Wait for footer to load, then set year
-                    setTimeout(function() {
-                        if (typeof setCurrentYear === 'function') {
-                            setCurrentYear();
-                        } else {
-                            // fallback if setCurrentYear is not defined
-                            const currentYear = new Date().getFullYear();
-                            const currentYearElement = document.getElementById("current-year");
-                            if (currentYearElement) {
-                                currentYearElement.textContent = currentYear;
-                            }
-                        }
-                    }, 100);
-                }
-            });
-        </script>
-    </div>-->
+      </div>
+      <!-- Mobile -->
+      <div class="header-mobile">
+        <div class="header-title"><a href="../index.html">Ditlev Lundsfryd Guld</a></div>
+        <button class="hamburger" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="nav mobile-nav">
+        <p><a href="../pages/galleri.html">Galleri</a></p>
+        <p><a href="../pages/ressourcer.html">Ressourcer</a></p>
+        <p><a href="../pages/cv.html">Mit CV</a></p>
+      </div>
+    </header>
+    <!-- Content -->
+    <div class="gallery-l-margin-container">
+      <!-- Desktop -->
+      <div class="gallery-grid-desktop">
+        <div class="gallery-item-desktop">
+            <img src="../images/danmark2-2020-50.png">
+        </div>
+        <div class="gallery-item-desktop">
+            <img src="../images/danmark2-2020-50.png">
+        </div>
+        <div class="gallery-item-desktop">
+            <img src="../images/danmark2-2020-50.png">
+        </div>
+        <div class="gallery-item-desktop">
+            <img src="../images/danmark2-2020-50.png">
+        </div>
+        <div class="gallery-item-desktop">
+            <img src="../images/danmark2-2020-50.png">
+        </div>
+      </div>
+    </div>
+    <div class="gallery-m-margin-container">
+      <!-- Mobile -->
+      
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-columns-desktop">
+      <div class="footer-left">
+        <div class="footer-title"><a href="index.html">Ditlev Lundsfryd Guld</a></div>
+        <hr class="footer-line">
+        <div class="footer-notice">
+          <p>Copyright © <span id="current-year-desktop"></span></p>
+          <p>Kontakt: mail@ditlevguld.dk</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a target="_self" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">
+          <img src="../images/github-mark-white.png" alt="GitHub" class="github-footer-icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-columns-mobile">
+      <div class="footer-left">
+        <div class="footer-title"><a href="index.html">Ditlev Lundsfryd Guld</a></div>
+        <hr class="footer-line">
+        <div class="footer-notice">
+          <p>Copyright © <span id="current-year-mobile"></span></p>
+          <p>Kontakt: mail@ditlevguld.dk</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a target="_self" href="https://github.com/SeaPie/seapie.github.io" rel="noopener">
+          <img src="../images/github-mark-white.png" alt="GitHub" class="github-footer-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+      // Set current year in both footers
+      document.addEventListener("DOMContentLoaded", function() {
+          var yearDesktop = document.getElementById("current-year-desktop");
+          var yearMobile = document.getElementById("current-year-mobile");
+          var year = new Date().getFullYear();
+          if (yearDesktop) yearDesktop.textContent = year;
+          if (yearMobile) yearMobile.textContent = year;
+      });
+  </script>
 </body>
 </html>

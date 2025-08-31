@@ -138,7 +138,7 @@
   <script>
       // Set current year in both footers
       document.addEventListener("DOMContentLoaded", function() {
-          var yearDesktop = document.getElementById("current-year-desktop"); //unique id for both footers or they won't work.
+          var yearDesktop = document.getElementById("current-year-desktop");
           var yearMobile = document.getElementById("current-year-mobile");
           var year = new Date().getFullYear();
           if (yearDesktop) yearDesktop.textContent = year;
