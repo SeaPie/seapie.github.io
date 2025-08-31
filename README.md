@@ -4,7 +4,7 @@ Welcome to the repository for my personal website, hosted with GitHub Pages.
 
 ## Customization
 
-Feel free to modify the content, styles, and scripts to fit your needs.
+Feel free to modify the content, styles, and scripts to suit your needs, in accordance with the license.
 
 ## License
 

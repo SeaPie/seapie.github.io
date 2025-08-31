@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tidligere og nuværende jobstillinger.">
+    <title>Mit CV</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/current-year.js"></script>
+    <script src="../js/load-footer.js"></script>
+</head>
+<body>
+    <h1>Under ombygning</h1>
+    <!--  
+    <div class="container-cv">
+        <section>
+        <h1>Mit CV</h1>
+        <hr>
+        <div class="text">
+            <h2>Mine stillinger:</h2>
+            <ul>
+                <li>2019-<span id="current-year"></span>: Arbejder hos tækker <a href="https://stråtag.dk/" target="_blank">Finn Guld</a> og tækker/tømrer <a href="https://www.thomasguld.dk/" target="_blank">Thomas Guld</a>. Mit arbejde indebærer høst og forarbejdning af både miscanthus og tagrør, samt skiftning af tagrykninger.</li>
+            </ul>
+            <h2>Hvad byder fremtiden?</h2>
+            <p>Jeg starter i 2025 på søværnets værnepligts-uddannelse.</p>
+        </div>
+        </section>
+        <div id="footer"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof loadFooter === 'function') {
+                    loadFooter();
+                    // Wait for footer to load, then set year
+                    setTimeout(function() {
+                        if (typeof setCurrentYear === 'function') {
+                            setCurrentYear();
+                        } else {
+                            // fallback if setCurrentYear is not defined
+                            const currentYear = new Date().getFullYear();
+                            const currentYearElement = document.getElementById("current-year");
+                            if (currentYearElement) {
+                                currentYearElement.textContent = currentYear;
+                            }
+                        }
+                    }, 100);
+                }
+            });
+        </script>
+    </div>-->
+</body>
+</html>
