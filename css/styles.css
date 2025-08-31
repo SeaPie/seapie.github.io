@@ -446,6 +446,35 @@ body {
         display: none;
     }
 
+    .gallery-front-door-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .gallery-front-door-h1-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .gallery-front-door-image-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .gallery-spacer-l {
+        margin: 0;
+        margin-top: 64px;
+    }
+
     .gallery-grid-desktop {
         display: flex;
         flex-direction: row;
@@ -474,5 +503,45 @@ body {
 @media (max-width: 800px) {
     .gallery-l-margin-container {
         display: none;
+    }
+
+    .gallery-front-door-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gallery-front-door-h1-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery-spacer-m {
+        margin: 0;
+        margin-top: 32px;
+    }
+
+    .gallery-grid-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        row-gap: 25px;
+    }
+
+    .gallery-item-mobile {
+        width: 45%;
+        height: auto;
+    }
+
+    .gallery-item-mobile img {
+        width: 100%;
+        height: auto;
     }
 }
