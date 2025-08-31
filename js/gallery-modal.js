@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(modal);
 
     // Attach click listeners to gallery images
-    document.querySelectorAll(".photo a").forEach(link => {
+    document.querySelectorAll("a.photo").forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
             modalImg.src = link.href;
