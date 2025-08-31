@@ -148,7 +148,7 @@ body {
         font-size: 1.2rem;
     }
 
-    .menu-button {
+    .hamburger {
         display: flex;
         background: none;
         border: none;
@@ -157,7 +157,7 @@ body {
         margin: 0;
     }
 
-    .menu-button svg {
+    .hamburger svg {
         fill: #fff;
     }
 }
